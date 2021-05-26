@@ -3,6 +3,7 @@ canvas {
     background-color: ghostwhite;
     
 }
+
 body {
     min-height: 100vh;
     background-image: linear-gradient(0deg, black, rgb(255, 0, 0));;
