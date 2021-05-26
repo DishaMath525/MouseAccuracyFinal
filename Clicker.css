@@ -1,12 +1,11 @@
 canvas {
-    padding: 10px;
     background-color: ghostwhite;
     
 }
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(0deg, black, rgb(255, 0, 0));;
+    background-image: linear-gradient(0deg, rgb(194, 2, 252), rgb(255, 0, 0));;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
