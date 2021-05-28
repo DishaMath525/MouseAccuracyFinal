@@ -5,7 +5,7 @@ canvas {
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(0deg, rgb(194, 2, 252), rgb(255, 0, 0));;
+    background-image: linear-gradient(to bottom right, rgb(13, 175, 13), black);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
