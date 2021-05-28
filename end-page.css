@@ -51,13 +51,13 @@ body {
     text-align: center;
     transition: all 0.3s ease;
     color: white;
-    font-size: 26px;
+    font-size: 32px;
   }
   
   .icon-bar a:hover {
-    background-color: #000;
+    background-color: gray;
   }
   
   .active {
-    background-color: rgba(128, 128, 128, 0.486);
+    background-color: black;
   }
