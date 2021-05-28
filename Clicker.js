@@ -20,9 +20,9 @@ function drawCircle() {
 
 function end(){
   clearInterval(interval);
-  window.location =  "file:///home/user10/Desktop/MouseAccuracyFinal/end-page.html";
+  window.location =  "file:///home/user10/Desktop/MouseAccuracyFinal/end-page.html"; // will only work for my desktop, need to change the link so that anyone can use it
 }
 
 function restart(){
-  window.location = "file:///home/user10/Desktop/MouseAccuracyFinal/Clicker.html";
+  window.location = "file:///home/user10/Desktop/MouseAccuracyFinal/Clicker.html"; // will only work for my desktop, need to change the link so that anyone can use it
 }
