@@ -1,0 +1,63 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(13, 175, 13), black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    /*background-image: url('redB.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+#restartButton {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+#restartButton:hover {
+    background-color: rgb(248, 152, 168);
+}
+
+.flex-container {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 32px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: gray;
+  }
+  
+  .active {
+    background-color: black;
+  }
