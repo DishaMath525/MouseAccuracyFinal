@@ -24,5 +24,5 @@ function end(){
 }
 
 function restart(){
-  window.location = "file:///home/user10/Desktop/MouseAccuracyFinal/Clicker.html"; // will only work for my desktop, need to change the link so that anyone can use it
+  window.location = "file:///home/user10/Desktop/MouseAccuracyFinal/Index.html"; // will only work for my desktop, need to change the link so that anyone can use it
 }
