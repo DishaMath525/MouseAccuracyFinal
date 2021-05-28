@@ -28,3 +28,27 @@ body {
 #endSession:hover {
     background-color: magenta;
 }
+
+.icon-bar {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 32px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: gray;
+  }
+  
+  .active {
+    background-color: black;
+  }
