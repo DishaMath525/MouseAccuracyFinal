@@ -1,3 +1,4 @@
+ 
 body {
     min-height: 100vh;
     background-image: linear-gradient(145deg, rgb(13, 175, 13), rgb(0, 0, 0));;
@@ -6,28 +7,50 @@ body {
     text-align: center;
 }
 
-.OuterMain {
-    border-radius: 25px;
-    background-color: rgb(41, 40, 40);
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: white;
-    margin-top: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
-}
-
 .flex-container {
-    display: flex;
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-.flex-child {
-    flex: 1;
-    border: 2px solid lawngreen;
+.flex-container2 {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container2 > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-.flex-child:first-child {
-    margin-right: 30px;
+#startButton {
+    background-color: lawngreen;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+#startButton:hover {
+    background-color: red;
 }
 
 /*
