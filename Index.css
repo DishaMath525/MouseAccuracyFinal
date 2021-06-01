@@ -6,58 +6,39 @@ body {
     text-align: center;
 }
 
-#OuterMain {
-    border-radius: 25px;
-    background-color: rgb(41, 40, 40);
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: white;
-    margin-top: 20px;
-    margin-left: 600px;
-    margin-right: 600px;
+.flex-container {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-/*
-#Difficulty {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 5%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
+.flex-container2 {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container2 > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-#Duration {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
-}
-
-#TargetSize {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 55%;
-    margin-top: 0%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
-}
-
-#TargetColor {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 55%;
-    margin-top: 3%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
-}
-*/
