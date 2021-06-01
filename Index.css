@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-#OuterMain {
+.OuterMain {
     border-radius: 25px;
     background-color: rgb(41, 40, 40);
     padding-top: 30px;
@@ -17,6 +17,20 @@ body {
     margin-right: 600px;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid lawngreen;
+}
+
+.flex-child:first-child {
+    margin-right: 30px;
+}
+
+/*
 #Difficulty {
     border-radius: 25px;
     padding-top: 10px;
@@ -59,3 +73,4 @@ body {
     border-color: lawngreen;
     border-style: solid;
 }
+*/
