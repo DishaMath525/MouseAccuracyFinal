@@ -12,13 +12,15 @@ var circle;
 
 function run() {
   interval = setInterval(drawCircle, 500);
-  document.addEventListener("click",countClicks(e));
+  document.addEventListener("click",countClicks());
   
 }
 
-function drawCircle() {
+function drawCircle(event) {
     cx =  Math.floor(Math.random() * 980);
     cy =  Math.floor(Math.random() * 580);
+    x = event.screenX;
+    y = event.screenY;
     radius = 40;
     ctx.beginPath();
     circle = ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
@@ -27,12 +29,10 @@ function drawCircle() {
 }
 
 
-function countClicks(e){
-  x = e.screenX;
-  y = e.screenY;
-
+function countClicks(){
+    
     if (pointInCircle(x, y, cx, cy, radius)) {
-        document.addEventListener("click", function(event){
+        document.addEventListener("click", function(){
           count++;
          
           document.getElementById("score").innerHTML = "Number Of Clicks: " + count;
