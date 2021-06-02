@@ -59,3 +59,9 @@ function end(){
 function restart(){
   window.location = "file:///home/user10/Desktop/MouseAccuracyFinal/Index.html"; // will only work for my desktop, need to change the link so that anyone can use it
 }
+
+/*
+window.location.pathname = '/end-page.html'
+
+"http://domain.com" -> "http://domain.com/relative-link"
+*/
