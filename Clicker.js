@@ -6,38 +6,39 @@ var x;
 var y;
 var cx;
 var cy;
-var radius;
-var circle;
-
+var radius =40;
+var circles = [];
 
 function run() {
-  interval = setInterval(drawCircle, 500);
-  document.addEventListener("click",countClicks());
+  interval = setInterval(drawCircle, 1000);
+  document.addEventListener("click",countClicks);
   
 }
 
-function drawCircle(event) {
+function drawCircle() {
     cx =  Math.floor(Math.random() * 980);
     cy =  Math.floor(Math.random() * 580);
-    x = event.screenX;
-    y = event.screenY;
-    radius = 40;
+  
     ctx.beginPath();
-    circle = ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+     ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
     //ctx.fillStyle();
     ctx.fill();
 }
 
 
-function countClicks(){
+function countClicks(e){
+
+      x = e.clientX;
+      y = e.clientY;
+
     
-    if (pointInCircle(x, y, cx, cy, radius)) {
-        document.addEventListener("click", function(){
-          count++;
-         
-          document.getElementById("score").innerHTML = "Number Of Clicks: " + count;
-    });
+
+    if(pointInCircle(x, y, cx, cy, radius)) {
+        count++;
+        document.getElementById("score").innerHTML = "Number Of Clicks: " + count;
+
   }
+
 }
 function pointInCircle(x, y, cx, cy, radius) {
  
