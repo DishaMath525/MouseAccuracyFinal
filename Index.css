@@ -23,7 +23,6 @@ body {
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-
 }
 
 .flex-container2 {
@@ -54,6 +53,7 @@ body {
 
 #startButton:hover {
     background-color: red;
+    cursor: pointer;
 }
 
 
@@ -64,17 +64,23 @@ body {
     background-image: linear-gradient(145deg, rgb(205, 226, 12), rgb(238, 255, 1));;
 }
 
+#easyDifficulty:hover{cursor: pointer;}
+
 #normalDifficulty {
     border-radius: 50px;
     font-size: 55%;
     background-image: linear-gradient(145deg, rgb(236, 203, 13), rgb(255, 187, 0));;
 }
 
+#normalDifficulty:hover{cursor: pointer;}
+
 #hardDifficulty {
     border-radius: 50px;
     font-size: 55%;
     background-image: linear-gradient(145deg, rgb(226, 169, 12), rgb(255, 0, 0));;
 }
+
+#hardDifficulty:hover{cursor: pointer;}
 /* ^^Difficulty Buttons Above^^ */
 
 /* Duration Buttons Below */
@@ -92,6 +98,7 @@ body {
 #shortDuration:hover {
     border-color: blanchedalmond;
     font-size: 65%;
+    cursor: pointer;
 }
 
 #normalDuration {
@@ -108,6 +115,7 @@ body {
 #normalDuration:hover {
     border-color: blanchedalmond;
     font-size: 65%;
+    cursor: pointer;
 }
 
 #longDuration {
@@ -124,60 +132,70 @@ body {
 #longDuration:hover {
     border-color: blanchedalmond;
     font-size: 65%;
+    cursor: pointer;
 }
 /* ^^Duration Buttons Above^^ */
 
+/* Target Shape Size */
 
 
-#Difficulty {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 5%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
+#sizeSmall {
+    height: 20px;
+    width: 20px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-#Duration {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
-
+#sizeNormal {
+    height: 35px;
+    width: 35px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-.flex-container2 {
-    display: inline-flex;
-    background-color: black;
-    border-radius: 20px;
-  }
-  
-.flex-container2 > div {
-    border: 5px solid lawngreen;
-    border-radius: 20px;
-    color:white;
-    width: 300px;
-    height: 150px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+#sizeLarge {
+    height: 50px;
+    width: 50px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 
-#TargetColor {
-    border-radius: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 55%;
-    margin-top: 3%;
-    width: 35%;
-    border-color: lawngreen;
-    border-style: solid;
+#smallSize {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(205, 226, 12), rgb(238, 255, 1));;
 }
+
+#smallSize:hover{cursor: pointer;}
+
+#normalSize {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(236, 203, 13), rgb(255, 187, 0));;
+}
+
+#normalSize:hover{cursor: pointer;}
+
+#largeSize {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(226, 169, 12), rgb(255, 0, 0));;
+}
+
+#largeSize:hover{cursor: pointer;}
+/* ^^Target Shape Size Above^^ */
+
+input {
+    float: left;
+    margin-left: 15%;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
 
