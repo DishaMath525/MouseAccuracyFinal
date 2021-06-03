@@ -33,7 +33,7 @@ function clickDetection(click, circle){
 function removeCircle(event){
   //count the clicks if a circle was removed from canvas
   numberOfClicks++;
-  document.getElementById("score").innerHTML = numberOfClicks;
+  document.getElementById("score").innerHTML = "Clicks: " + numberOfClicks;
 
   var clickLocation = {
     x: event.offsetX,
@@ -51,5 +51,5 @@ function removeCircle(event){
   });
 }
 
-}
+
 
