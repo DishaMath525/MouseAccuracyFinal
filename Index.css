@@ -1,0 +1,183 @@
+ /* Black Box and Green Borders below */
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(145deg, rgb(13, 175, 13), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.flex-container {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+}
+
+.flex-container2 {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container2 > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 225px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+/* ^^Black Box and Green Borders above^^ */
+
+
+#startButton {
+    background-color: lawngreen;
+    border-radius: 10px;
+    font-size: 150%;
+}
+
+#startButton:hover {
+    background-color: red;
+}
+
+
+/* Difficulty Buttons Below */
+#easyDifficulty {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(205, 226, 12), rgb(238, 255, 1));;
+}
+
+#normalDifficulty {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(236, 203, 13), rgb(255, 187, 0));;
+}
+
+#hardDifficulty {
+    border-radius: 50px;
+    font-size: 55%;
+    background-image: linear-gradient(145deg, rgb(226, 169, 12), rgb(255, 0, 0));;
+}
+/* ^^Difficulty Buttons Above^^ */
+
+/* Duration Buttons Below */
+#shortDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#shortDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+}
+
+#normalDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#normalDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+}
+
+#longDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#longDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+}
+/* ^^Duration Buttons Above^^ */
+
+
+
+#Difficulty {
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 5%;
+    width: 35%;
+    border-color: lawngreen;
+    border-style: solid;
+}
+
+#Duration {
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 35%;
+    border-color: lawngreen;
+    border-style: solid;
+
+}
+
+.flex-container2 {
+    display: inline-flex;
+    background-color: black;
+    border-radius: 20px;
+  }
+  
+.flex-container2 > div {
+    border: 5px solid lawngreen;
+    border-radius: 20px;
+    color:white;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+#TargetColor {
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 55%;
+    margin-top: 3%;
+    width: 35%;
+    border-color: lawngreen;
+    border-style: solid;
+}
+

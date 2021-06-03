@@ -21,6 +21,7 @@ function drawCircle() {
     ctx.beginPath();
     ctx.arc(circleX, circleY, radius, 0, 2 * Math.PI);
     ctx.fill();
+
     circleList.push({x:circleX, y:circleY});
 }
 
@@ -49,3 +50,6 @@ function removeCircle(event){
     }
   });
 }
+
+}
+
