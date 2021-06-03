@@ -3,9 +3,10 @@ var ctx = document.getElementById("canvas").getContext("2d");
 var numberOfClicks = 0;
 var circleList = [];
 const radius = 20;
+var interval;
 
 function run() {
-  setInterval(drawCircle, 500);
+  interval = setInterval(drawCircle, 500);
   canvas.addEventListener('mousedown', (removeCircle));
 }
 
@@ -48,8 +49,20 @@ function removeCircle(event){
     }else{
       newCircles.push(circle);
     }
+    
   });
 }
 
+function end(){
+  clearInterval(interval);
+  var localStorage = window.sessionStorage;  
+  localStorage.clickCount = numberOfClicks;
+  window.location =  "file:///home/user10/Desktop/MouseAccuracyFinal/end-page.html";
+ 
+}
 
+function get(){
+  var click = end();
+  document.getElementById("clicks").innerHTML =  click;
+}
 
