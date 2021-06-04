@@ -19,8 +19,14 @@ function setDurationTime(){
   duration = window.sessionStorage.getItem("durationTime");
   setTimeout(function(){
     window.sessionStorage.setItem("numofclicks",numberOfClicks);
-     numberOfDots = duration/intervalTime;
-    clickAccuracy = (numberOfClicks/numberOfDots) * 100;
+    if(duration == 16000){
+      numberOfDots = 15000/intervalTime;
+    } else if(duration == 40000){
+      numberOfDots = 30000/intervalTime;
+    } else {
+      numberOfDots = 60000/intervalTime
+    }
+    clickAccuracy = ((numberOfClicks/numberOfDots) * 100) + " %";
     window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
     window.location = "end-page.html"
   }, duration);
