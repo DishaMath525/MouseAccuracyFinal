@@ -18,6 +18,10 @@ function getIntervalTime(){
 function setDurationTime(){
   duration = window.sessionStorage.getItem("durationTime");
   setTimeout(function(){
+    window.sessionStorage.setItem("numofclicks",numberOfClicks);
+     numberOfDots = duration/intervalTime;
+    clickAccuracy = (numberOfDots/numberOfClicks)* 100;
+    window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
     window.location = "end-page.html"
   }, duration);
 }
