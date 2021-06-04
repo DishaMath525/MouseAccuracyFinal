@@ -15,6 +15,11 @@
                     <button id="easyDifficulty" value= "3000" onclick="setEasyDifficulty()">Easy</button> 
                     <button id="normalDifficulty"  value= "1000" onclick="setNormalDifficulty()">Normal</button>
                     <button id="hardDifficulty"  value= "500" onclick="setHardDifficulty()">Hard</button>
+                    
+                  <div id="Duration">Duration <br>
+                    <button id="shortDuration" value= "15000" onclick="setShortDuration()">15</button> 
+                    <button id="normalDuration"  value= "30000" onclick="setNormalDuration()">30</button>
+                    <button id="longDuration"  value= "60000" onclick="setLongDuration()">60</button>
                 </div>
             
             </div>
@@ -81,6 +86,22 @@
                     difficulty = document.getElementById("hardDifficulty").value;
                     window.sessionStorage.setItem("intervalTime" , difficulty);
                 }
+                
+                function setShortDuration(){
+                    duration = document.getElementById("shortDuration").value;
+                    window.sessionStorage.setItem("durationTime" , duration);
+                }
+                
+                function setNormalDuration(){
+                    duration = document.getElementById("normalDuration").value;
+                    window.sessionStorage.setItem("durationTime" , duration);
+                }
+                
+                function setLongDuration(){
+                    duration = document.getElementById("longDuration").value;
+                    window.sessionStorage.setItem("durationTime" , duration);
+                }
+
 
             </script>
     </body>
