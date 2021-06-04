@@ -17,10 +17,10 @@
                     <button id="hardDifficulty"  value= "500" onclick="setHardDifficulty()">Hard</button>
                 </div>
                 
-                  <div id="Duration">Duration <br>
-                    <button id="shortDuration" value= "16000" onclick="setShortDuration()">15</button> 
-                    <button id="normalDuration"  value= "40000" onclick="setNormalDuration()">30</button>
-                    <button id="longDuration"  value= "70000" onclick="setLongDuration()">60</button>
+                  <div id="Duration">Duration (in seconds) <br>
+                    <button id="shortDuration" value= "16000" onclick="setShortDuration()">15</button>
+                    <button id="normalDuration"  value= "31000" onclick="setNormalDuration()">30</button>
+                    <button id="longDuration"  value= "61000" onclick="setLongDuration()">60</button>
                 </div>
             
             </div>
@@ -46,6 +46,11 @@
             <br>
             <br>
             <button id="startButton" onclick="setColor()"><a href="Clicker.html">Start</a></button>
+        <hr>
+        <h3>Your Selections: </h3>
+        <div id = "displayDifficulty"></div>
+        <div id="displayDuration"></div>
+        <div id="displaySize"></div>
 
             <script>
                 var color;
@@ -61,46 +66,55 @@
                 function setSmallSize(){
                     size = document.getElementById("smallSize").value;
                     window.sessionStorage.setItem("circleSize" , size);
+                    document.getElementById("displaySize").innerHTML = "Size: Small";
                 }
 
                 function setNormalSize(){
                     size = document.getElementById("normalSize").value;
                     window.sessionStorage.setItem("circleSize" , size);
+                    document.getElementById("displaySize").innerHTML = "Size: Normal";
                 }
 
                 function setLargeSize(){
                     size = document.getElementById("largeSize").value;
                     window.sessionStorage.setItem("circleSize" , size);
+                    document.getElementById("displaySize").innerHTML = "Size: Large";
                 }
 
                 function setEasyDifficulty(){
                     difficulty = document.getElementById("easyDifficulty").value;
                     window.sessionStorage.setItem("intervalTime" , difficulty);
+                    document.getElementById("displayDifficulty").innerHTML = "Difficulty: Easy";
                 }
 
                 function setNormalDifficulty(){
                     difficulty = document.getElementById("normalDifficulty").value;
                     window.sessionStorage.setItem("intervalTime" , difficulty);
+                    document.getElementById("displayDifficulty").innerHTML = "Difficulty: Normal";
                 }
 
                 function setHardDifficulty(){
                     difficulty = document.getElementById("hardDifficulty").value;
                     window.sessionStorage.setItem("intervalTime" , difficulty);
+                    document.getElementById("displayDifficulty").innerHTML = "Difficulty: Hard";
                 }
                 
                 function setShortDuration(){
                     duration = document.getElementById("shortDuration").value;
                     window.sessionStorage.setItem("durationTime" , duration);
+                    document.getElementById("displayDuration").innerHTML = "Duration: 15seconds";
                 }
                 
                 function setNormalDuration(){
                     duration = document.getElementById("normalDuration").value;
                     window.sessionStorage.setItem("durationTime" , duration);
+                    document.getElementById("displayDuration").innerHTML = "Duration: 30 seconds";
                 }
                 
                 function setLongDuration(){
                     duration = document.getElementById("longDuration").value;
                     window.sessionStorage.setItem("durationTime" , duration);
+                    document.getElementById("displayDuration").innerHTML = "Duration: 60 seconds";
                 }
 
 

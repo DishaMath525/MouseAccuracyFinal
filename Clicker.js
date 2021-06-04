@@ -20,15 +20,15 @@ function setDurationTime(){
   setTimeout(function(){
     window.sessionStorage.setItem("numofclicks",numberOfClicks);
     if(duration == 16000){
-      numberOfDots = 15000/intervalTime;
+      numberOfDots = Math.floor(15000/intervalTime);
     }
-    if(duration == 40000){
-      numberOfDots = 30000/intervalTime;
+    if(duration == 31000){
+      numberOfDots = Math.floor(30000/intervalTime);
     } 
-    if(duration == 70000){
-      numberOfDots = 60000/intervalTime
+    if(duration == 61000){
+      numberOfDots = Math.floor(60000/intervalTime);
     }
-    clickAccuracy = ((numberOfClicks/numberOfDots) * 100) + " %";
+    clickAccuracy = Math.floor((numberOfClicks/numberOfDots) * 100) + " %";
     window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
     window.location = "end-page.html"
   }, duration);
