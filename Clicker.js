@@ -15,10 +15,18 @@ function getIntervalTime(){
   return intervalTime;
 }
 
+function setDurationTime(){
+  duration = window.sessionStorage.getItem("durationTime");
+  setTimeout(function(){
+    window.location = "end-page.html"
+  }, duration);
+}
+
 function run() {
   intervalTime = getIntervalTime();
   interval = setInterval(drawCircle, intervalTime);
   canvas.addEventListener('mousedown', (removeCircle));
+  setDurationTime();
 }
 
 function getColor(){
