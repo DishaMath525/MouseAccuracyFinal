@@ -142,7 +142,7 @@ body {
 #sizeSmall {
     height: 20px;
     width: 20px;
-    background-color: darkgoldenrod;
+    background-color: rgb(251, 255, 0);
     border-radius: 50%;
     display: inline-block;
 }
@@ -150,7 +150,7 @@ body {
 #sizeNormal {
     height: 35px;
     width: 35px;
-    background-color: darkgoldenrod;
+    background-color: rgb(60, 255, 0);
     border-radius: 50%;
     display: inline-block;
 }
@@ -158,7 +158,7 @@ body {
 #sizeLarge {
     height: 50px;
     width: 50px;
-    background-color: darkgoldenrod;
+    background-color: rgb(255, 0, 0);
     border-radius: 50%;
     display: inline-block;
 }
