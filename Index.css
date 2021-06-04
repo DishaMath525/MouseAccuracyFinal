@@ -84,6 +84,57 @@ body {
 #hardDifficulty:hover{cursor: pointer;}
 /* ^^Difficulty Buttons Above^^ */
 
+/* Duration Buttons Below */
+#shortDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#shortDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+    cursor: pointer;
+}
+
+#normalDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#normalDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+    cursor: pointer;
+}
+
+#longDuration {
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(290deg, rgb(200, 255, 0), rgb(255, 30, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: black;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 55%;
+}
+
+#longDuration:hover {
+    border-color: blanchedalmond;
+    font-size: 65%;
+    cursor: pointer;
+}
 
 /* ^^Duration Buttons Above^^ */
 
