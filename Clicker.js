@@ -19,8 +19,8 @@ function setDurationTime(){
   duration = window.sessionStorage.getItem("durationTime");
   setTimeout(function(){
     window.sessionStorage.setItem("numofclicks",numberOfClicks);
-     numberOfDots = circleList.length;
-    clickAccuracy = (numberOfDots/numberOfClicks)* 100;
+     numberOfDots = duration/intervalTime;
+    clickAccuracy = (numberOfDots/numberOfClicks);
     window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
     window.location = "end-page.html"
   }, duration);
