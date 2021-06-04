@@ -21,9 +21,11 @@ function setDurationTime(){
     window.sessionStorage.setItem("numofclicks",numberOfClicks);
     if(duration == 16000){
       numberOfDots = 15000/intervalTime;
-    } else if(duration == 40000){
+    }
+    if(duration == 40000){
       numberOfDots = 30000/intervalTime;
-    } else {
+    } 
+    if(duration == 70000){
       numberOfDots = 60000/intervalTime
     }
     clickAccuracy = ((numberOfClicks/numberOfDots) * 100) + " %";
