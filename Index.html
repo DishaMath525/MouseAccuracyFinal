@@ -12,16 +12,11 @@
             <div class="flex-container">
                 <div id="Difficulty">
                     Difficulty <br>
-                    <button id="easyDifficulty" onclick="">Easy</button> 
-                    <button id="normalDifficulty" onclick="">Normal</button>
-                    <button id="hardDifficulty" onclick="">Hard</button>
+                    <button id="easyDifficulty" value= "3000" onclick="setEasyDifficulty()">Easy</button> 
+                    <button id="normalDifficulty"  value= "1000" onclick="setNormalDifficulty()">Normal</button>
+                    <button id="hardDifficulty"  value= "500" onclick="setHardDifficulty()">Hard</button>
                 </div>
-                <div id="Duration">
-                    Duration <br>
-                    <button id="shortDuration" onclick="">15</button>
-                    <button id="normalDuration" onclick="">30</button>
-                    <button id="longDuration" onclick="">60</button>
-                </div>
+            
             </div>
        
             <br>
@@ -32,19 +27,61 @@
                     <div id="sizeNormal"></div>
                     <div id="sizeLarge"></div>
                     <br>
-                    <button id="smallSize" onclick="">Small</button>
-                    <button id="normalSize" onclick="">Regular</button>
-                    <button id="largeSize" onclick="">Large</button>
+                    <button id="smallSize" value = "10" onclick="setSmallSize()">Small</button>
+                    <button id="normalSize" value ="20" onclick="setNormalSize()">Regular</button>
+                    <button id="largeSize" value = "40"onclick="setLargeSize()">Large</button>
                 </div>
                 <div id="TargetColor">
                     Target Color <br>
-                    <input type="color" id="colorpicker" value="#0000ff">
+                    <input type="color" id="colorpicker" name="colorpicker">
                 </div>
             </div>
             
             <br>
             <br>
-            <button id="startButton" onclick="run()"><a href="Clicker.html">Start</a></button>
-            <script src="Clicker.js"></script>
+            <button id="startButton" onclick="setColor()"><a href="Clicker.html">Start</a></button>
+
+            <script>
+                var color;
+                var size;
+                var difficulty;
+                var duration;
+
+                function setColor(){
+                    color = document.getElementById("colorpicker").value;
+                    window.sessionStorage.setItem("colorofcircle", color); 
+                }
+
+                function setSmallSize(){
+                    size = document.getElementById("smallSize").value;
+                    window.sessionStorage.setItem("circleSize" , size);
+                }
+
+                function setNormalSize(){
+                    size = document.getElementById("normalSize").value;
+                    window.sessionStorage.setItem("circleSize" , size);
+                }
+
+                function setLargeSize(){
+                    size = document.getElementById("largeSize").value;
+                    window.sessionStorage.setItem("circleSize" , size);
+                }
+
+                function setEasyDifficulty(){
+                    difficulty = document.getElementById("easyDifficulty").value;
+                    window.sessionStorage.setItem("intervalTime" , difficulty);
+                }
+
+                function setNormalDifficulty(){
+                    difficulty = document.getElementById("normalDifficulty").value;
+                    window.sessionStorage.setItem("intervalTime" , difficulty);
+                }
+
+                function setHardDifficulty(){
+                    difficulty = document.getElementById("hardDifficulty").value;
+                    window.sessionStorage.setItem("intervalTime" , difficulty);
+                }
+
+            </script>
     </body>
 </html>

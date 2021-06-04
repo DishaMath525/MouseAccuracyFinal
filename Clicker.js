@@ -2,15 +2,35 @@ var canvas = document.getElementById("canvas");
 var ctx = document.getElementById("canvas").getContext("2d");
 var numberOfClicks = 0;
 var circleList = [];
-const radius = 20;
+var radius;
 var interval;
-var localStorage;
+var color;
+var intervalTime;
+var duation;
+var clickAccuracy;
+var numberOfDots;
+
+function getIntervalTime(){
+  intervalTime = window.sessionStorage.getItem("intervalTime");
+  return intervalTime;
+}
 
 function run() {
-  interval = setInterval(drawCircle, 500);
+  intervalTime = getIntervalTime();
+  interval = setInterval(drawCircle, intervalTime);
   canvas.addEventListener('mousedown', (removeCircle));
 }
 
+function getColor(){
+  color = window.sessionStorage.getItem("colorofcircle");
+  return color;
+}
+
+function getRadius(){
+  
+  radius = window.sessionStorage.getItem("circleSize");
+  return radius;
+}
 function drawCircle() {
     var circleX =  Math.floor(Math.random() * 580);
     var circleY =  Math.floor(Math.random() * 580);
@@ -21,9 +41,12 @@ function drawCircle() {
     };
 
     ctx.beginPath();
+    radius = getRadius();
     ctx.arc(circleX, circleY, radius, 0, 2 * Math.PI);
+    color = getColor();
+    ctx.fillStyle = color;
     ctx.fill();
-
+    color = getColor();
     circleList.push({x:circleX, y:circleY});
 }
 
@@ -34,9 +57,6 @@ function clickDetection(click, circle){
 
 function removeCircle(event){
   //count the clicks if a circle was removed from canvas
-
-
-
 
   var clickLocation = {
     x: event.offsetX,
@@ -62,12 +82,12 @@ function end(){
   window.sessionStorage.setItem("numofclicks",numberOfClicks);
   //window.sessionStorage.clickCount = numberOfClicks;
   window.location =  "end-page.html";
-  document.getElementById("clicks").innerHTML = sessionStorage.clickCount;
+ // document.getElementById("clicks").innerHTML = sessionStorage.clickCount;
 
-  /*
-  accuracy = numberOfDots/numberOfClicks   *100;
-  numberDots = duration/ (easy/med/hard mode time)
-  */
+  numberOfDots = duration/intervalTime;
+  clickAccuracy = (numberOfDots/numberOfClicks)* 100;
+  window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
+  
 }
 
 

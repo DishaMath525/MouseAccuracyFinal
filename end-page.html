@@ -19,11 +19,13 @@
         <h2>Game Stats:</h2>
         <div class="flex-container">
            
-            <div>Dots Removed
+            <div>Dots Removed/ Clicks
                 <div id="clicks"> </div>
             </div>   
     
-            <div id="clickAccuracy">Click Accuracy</div>      
+            <div>Click Accuracy
+                <div id="clickAccuracy"> </div>  
+            </div>
         </div>
        
         <br>
@@ -37,6 +39,9 @@
         function getClicks(){
             var num_of_clicks = window.sessionStorage.getItem("numofclicks");
             document.getElementById("clicks").innerHTML = num_of_clicks;
+
+            var clickAccuracy = window.sessionStorage.getItem("clickAccuracy");
+            document.getElementById("clickAccuracy").innerHTML = num_of_clicks;
         }
 
         function restart(){
