@@ -20,7 +20,7 @@ function setDurationTime(){
   setTimeout(function(){
     window.sessionStorage.setItem("numofclicks",numberOfClicks);
      numberOfDots = duration/intervalTime;
-    clickAccuracy = (numberOfClicks/numberOfDots);
+    clickAccuracy = (numberOfClicks/numberOfDots) * 100;
     window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
     window.location = "end-page.html"
   }, duration);
@@ -97,8 +97,8 @@ function end(){
  // document.getElementById("clicks").innerHTML = sessionStorage.clickCount;
   
 
-  numberOfDots = duration/intervalTime;
-  clickAccuracy = (numberOfDots/numberOfClicks)* 100;
+   numberOfDots = duration/intervalTime;
+   clickAccuracy = (numberOfClicks/numberOfDots) * 100;
   window.sessionStorage.setItem("clickAccuracy", clickAccuracy);
   
 }
