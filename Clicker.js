@@ -4,6 +4,7 @@ var numberOfClicks = 0;
 var circleList = [];
 const radius = 20;
 var interval;
+var localStorage;
 
 function run() {
   interval = setInterval(drawCircle, 500);
@@ -33,8 +34,9 @@ function clickDetection(click, circle){
 
 function removeCircle(event){
   //count the clicks if a circle was removed from canvas
-  numberOfClicks++;
-  document.getElementById("score").innerHTML = "Clicks: " + numberOfClicks;
+
+
+
 
   var clickLocation = {
     x: event.offsetX,
@@ -46,6 +48,7 @@ function removeCircle(event){
     if (clickDetection(clickLocation, circle)) {
       //if circle was clicked remove from canvas
       ctx.clearRect(circle.x-radius, circle.y - radius, 2*radius, 2*radius);
+       numberOfClicks++;
     }else{
       newCircles.push(circle);
     }
@@ -55,14 +58,18 @@ function removeCircle(event){
 
 function end(){
   clearInterval(interval);
-  var localStorage = window.sessionStorage;  
-  localStorage.clickCount = numberOfClicks;
-  window.location =  "file:///home/user10/Desktop/MouseAccuracyFinal/end-page.html";
- 
+
+  window.sessionStorage.setItem("numofclicks",numberOfClicks);
+  //window.sessionStorage.clickCount = numberOfClicks;
+  window.location =  "end-page.html";
+  document.getElementById("clicks").innerHTML = sessionStorage.clickCount;
+
+  /*
+  accuracy = numberOfDots/numberOfClicks   *100;
+  numberDots = duration/ (easy/med/hard mode time)
+  */
 }
 
-function get(){
-  var click = end();
-  document.getElementById("clicks").innerHTML =  click;
-}
+
+
 

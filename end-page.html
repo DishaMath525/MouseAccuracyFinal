@@ -7,7 +7,7 @@
     <title></title>
     </head>
      
-    <body onload = "get()">
+    <body onload="getClicks()">
         <div class="icon-bar">
             <a class="active" href="Clicker.html"><i class="fa fa-home"></i></a> 
             
@@ -19,8 +19,8 @@
         <h2>Game Stats:</h2>
         <div class="flex-container">
            
-            <div>Clicks
-                <div id="clicks"></div>   
+            <div>Dots Removed
+                <div id="clicks"> </div>
             </div>   
     
             <div id="clickAccuracy">Click Accuracy</div>      
@@ -33,6 +33,15 @@
         <button id="restartButton" onclick="restart()">RESTART</button>
        
 
-        <script src="Clicker.js"></script>
+        <script>
+        function getClicks(){
+            var num_of_clicks = window.sessionStorage.getItem("numofclicks");
+            document.getElementById("clicks").innerHTML = num_of_clicks;
+        }
+
+        function restart(){
+            window.location =  "Index.html";
+        }
+        </script>
     </body>
 </html>
