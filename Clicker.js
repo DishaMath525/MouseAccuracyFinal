@@ -91,6 +91,7 @@ function end(){
   //window.sessionStorage.clickCount = numberOfClicks;
   window.location =  "end-page.html";
  // document.getElementById("clicks").innerHTML = sessionStorage.clickCount;
+  
 
   numberOfDots = duration/intervalTime;
   clickAccuracy = (numberOfDots/numberOfClicks)* 100;
